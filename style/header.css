@@ -1,0 +1,106 @@
+.header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  margin-left: 400px;
+  height: 56px;
+  display: flex;
+  z-index: 100px;
+}
+
+.home-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 605px;
+    border-right: 1px solid rgba(98, 103, 108, 0.5);
+    border-left: 1px solid rgba(98, 103, 108, 0.5);
+}
+
+.home{
+    font-size: 20px;
+    color: rgb(231, 232, 234);
+    font-weight: bold;
+    padding-left: 16px;
+}
+
+.home:hover{
+    cursor: pointer;
+}
+
+.top-tweets-icon{
+    width: 24px;
+    margin-right: 6px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+    transition: background-color 0.15s;
+}
+
+.top-tweets-icon:hover{
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+}
+
+
+/*  SEARCH BAR  */
+
+
+.input-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 515px;
+    background-color: black;
+}
+
+.input-search{
+    margin-left: 30px;
+    border-radius: 26px;
+    margin-bottom: 4px;
+}
+
+
+.search-twitter-input{
+    padding: 10px 144px 10px 38px; 
+    border: 1px solid rgb(31, 35, 38);
+    background-color: rgb(31, 35, 38);
+    height: 22px;
+    border-radius: 26px;
+ 
+}
+
+.search-twitter-input::placeholder{
+    color: rgb(98, 103, 108);
+    font-size: 15px;
+    padding-left: 16px;
+}
+
+.search-icon{
+    width: 14px;
+    position: absolute;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+
+.input-active{
+    background-color: black;
+    position: absolute;
+    bottom: -93px;
+    right: 122px;
+    left: 15px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+    opacity: 0;
+}
+
+.input-active-p{
+    font-size: 15px;
+    color: gray;
+    padding-bottom: 40px;
+}

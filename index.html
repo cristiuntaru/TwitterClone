@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home / Twitter Clone</title>
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/feed.css">
+    <link rel="stylesheet" href="style/suggestion.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/messages.css">
+    
+</head>
+
+
+<body>
+   
+   <div class="sidebar">
+     <div class="navigation">
+         <div class="navigation-container">
+             <img class="sidebar-twitter-icon" src="icons/twitter-logo.svg" alt="Twitter-Icon">
+         </div>
+         <div class="navigation-container">
+             <div class="hover-container">
+                <img class="sidebar-icon-home" src="icons/home-icon.svg" alt="Home Icon">
+                <p class="navigation-first-text">Home</p>
+             </div>
+         </div>
+         <div class="navigation-container">
+             <div class="hover-container">
+                <img class="sidebar-icon" src="icons/explore-icon.svg" alt="Explore Icon">
+                <p class="navigation-text">Explore</p>
+             </div>
+         </div>
+         <div class="navigation-container">
+             <div class="hover-container">
+                <img class="sidebar-icon" src="icons/notification-icon.svg" alt="Notifications Icon">
+                <p class="navigation-text">Notifications</p>
+             </div>
+         </div>
+         <div class="navigation-container">
+             <div class="hover-container">
+                <img class="sidebar-icon" src="icons/messages-icon.svg" alt="Messages Icon">
+             <p class="navigation-text">Messages</p>
+             </div>
+         </div>
+         <div class="navigation-container">
+             <div class="hover-container">
+                <img class="sidebar-icon" src="icons/bookmarks-icon.svg" alt="Bookmarks Icon">
+                <p class="navigation-text">Bookmarks</p>
+             </div>
+         </div>
+         <div class="navigation-container">
+             <div class="hover-container">
+                <img class="sidebar-icon" src="icons/lists-icon.svg" alt="Lists Icon">
+                <p class="navigation-text">Lists</p>
+             </div>
+         </div>
+         <div class="navigation-container">
+             <div  class="hover-container">
+                <img class="sidebar-icon" src="icons/profile-icon.svg" alt="Profile Icon">
+                <p class="navigation-text">Profile</p>
+             </div>
+         </div>
+         <div class="navigation-container">
+             <div class="hover-container">
+                <img class="sidebar-icon" src="icons/more-icon.svg" alt="More Icon">
+                <p class="navigation-text">More</p>
+             </div>
+         </div>  
+      </div>
+
+       <div class="button-container">
+           <div class="button-second-container">
+            <button class="tweet-button">Tweet</button>
+           </div>
+            
+       </div>
+       
+       <div class="account-container">
+           <div class="account-stats">
+               <div class="account-picture-and-text">
+                  <img class="account-picture" src="icons/account-picture.svg" alt="Account Picture">
+                 <div class="account-text">
+                   <p class="account-text-one">Cristian Untaru</p>
+                   <p class="account-text-two">@UntaruCristian</p>
+                 </div>
+               </div>
+               
+               <img class="three-dots-account-icon" src="icons/more-profile-user-icon.svg" alt="3 Dots Profile User Icon">
+           </div>
+       </div>
+   </div> 
+   
+
+
+
+   <div class="header">
+       <div class="home-page">
+           <p class="home">Home</p>
+           <img class="top-tweets-icon" src="icons/top-tweets-icon.svg" alt="Top Tweets Icon">
+       </div>
+
+       <div class="input-container">
+           <div class="input-search">
+            <input class="search-twitter-input" type="text" placeholder="Search Twitter">
+           </div>
+           <img class="search-icon" src="icons/search-icon.svg" alt="Search Icon">
+           <!--<div class="input-active">
+              <p class="input-active-p"> Try searching for people, topics, or keywords </p> 
+           </div> -->
+       </div> 
+   </div>
+
+   <div class="page">
+      <div class="feed-container">
+          <div class="margin-container-input">
+             <div>
+                 <div class="pictureand-input-container">
+                     <img class="feed-accpicture" src="icons/account-picture.svg" alt="Account Picture">
+                     <input class="feed-input" type="text" placeholder="What's happening?">
+                 </div>
+             </div>
+             <div class="icons-and-tweet-container">
+                 <div class="icons-feed-container">
+                     <div class="icon-spacing"> 
+                         <img class="feed-icon" src="icons/media-icon.svg" alt="Media Icon">
+                         <div class="icon-hover">
+                             <p class="icon-hover-text">Media</p>
+                         </div>
+                     </div>
+                     <div class="icon-spacing"> 
+                         <img class="feed-icon" src="icons/GIF-icon.svg" alt="GIF Icon">
+                         <div class="icon-hovertwo">
+                             <p class="icon-hover-texttwo">GIF</p>
+                         </div>
+                     </div>
+                     <div class="icon-spacing"> 
+                         <img class="feed-icon" src="icons/pool-icon.svg" alt="Pool Icon">
+                         <div class="icon-hoverthree">
+                             <p class="icon-hover-texttwo">Poll</p>
+                         </div>
+                     </div>
+                     <div class="icon-spacing">
+                          <img class="feed-icon" src="icons/emoji-icon.svg" alt="Emoji Icon">
+                          <div class="icon-hoverfour">
+                              <p class="icon-hover-texttwo">Emoji</p>
+                          </div>
+                     </div>
+                     <div class="icon-spacing">
+                          <img class="feed-icon" src="icons/schedule-icon.svg" alt="Schedule Icon">
+                          <div class="icon-hoverfive">
+                              <p class="icon-hover-texttwo">Schedule</p>
+                          </div>
+                     </div>
+                     <div class="icon-location-spacing"> 
+                         <img class="feed-location-icon" src="icons/location-icon.svg" alt="Location Icon">
+                     </div>
+                 </div>
+                 <div>
+                     <button class="feed-tweet-btn">Tweet</button>
+                 </div>
+              </div> 
+          </div>
+
+           <div class="timeline-container">
+               <div class="timeline-info">
+                   <img class="timeline-photo" src="images/twitter-timeline.v2.png" alt="Twitter timeline Photo">
+                   <div class="timeline-title">
+                    <p class="timeline-header">Welcome to your</p>
+                    <p class="timeline-header">timeline!</p>
+                   </div>
+                   
+                   <p class="timeline-description">This is the best place to see whats's happening on</p>
+                   <p class="timeline-description">Twitter for you. The more people and interests you</p>
+                   <p class="timeline-description">follow, the better your timeline becomes. We have</p>
+                   <p class="timeline-description">some suggestions to help you get started.</p>
+
+                   <div class="timeline-button-container">
+                       <button class="timeline-button">Let's go</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+   
+      <div class="suggestion">
+         <div class="trending-bar">
+              <div>
+                  <p class="trendingbar-title">Trends for you</p>
+              </div>
+    
+              <div class="trending-option">
+                  <div class="trending-container">
+                     <div class="stats-container">
+                         <p class="trending-in">Trending in Romania</p>
+                         <p class="trending-title">#NFTs</p>
+                         <p class="trending-count">731k Tweets</p>
+                     </div>
+                     <div class="threedots-container">
+                         <div class="show-more">
+                             <p class="three-dots">&#183; &#183; &#183;</p>
+                             <div class="hover-threedots-container">
+                                 More
+                             </div>
+                         </div>
+                      </div>
+                   </div>
+              </div>
+    
+              <div class="trending-option">
+                 <div class="trending-container">
+                    <div class="stats-container">
+                        <p class="trending-in">Digital assets & crypto currency &#183; Trending</p>
+                        <p class="trending-title"> OpenSea</p>
+                        <p class="trending-count">428K Tweets</p>
+                    </div>
+                    <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+              </div>
+    
+              <div class="trending-option">
+                  <div class="trending-container">
+                     <div class="stats-container">
+                         <p class="trending-in">Digital assets & crypto currency &#183; Trending</p>
+                         <p class="trending-title">#crypto</p>
+                         <p class="trending-count">4.58M Tweets</p>
+                     </div>
+                     <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                   </div>
+              </div>
+    
+                <div class="trending-option">
+                    <div class="trending-container">
+                       <div class="stats-container">
+                           <p class="trending-in">Technology &#183; Trending</p>
+                           <p class="trending-title"> #100DaysOfCode</p>
+                           <p class="trending-count">32.5K Tweets</p>
+                       </div>
+                       <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+               </div>
+    
+               <div class="trending-option">
+                   <div class="trending-container">
+                     <div class="stats-container">
+                         <p class="trending-in">Politics &#183; Trending</p>
+                         <p class="trending-title"> Trump</p>
+                         <p class="trending-count"> 638k Tweets</p>
+                     </div>
+                     <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                   </div>
+               </div>
+    
+               <div class="trending-option">
+                   <div class="trending-container">
+                     <div class="stats-container">
+                         <p class="trending-in">Technology &#183; Trending</p>
+                         <p class="trending-title"> #opensource</p>
+                         <p class="trending-count"> 5.125 Tweets</p>
+                     </div>
+                     <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                   </div>
+               </div>
+    
+               <div class="trending-option">
+                   <div class="trending-container">
+                     <div class="stats-container">
+                         <p class="trending-in">Digital Assets & Crypto Currency &#183; Trending</p>
+                         <p class="trending-title"> GameFi</p>
+                         <p class="trending-count"> 105K Tweets</p>
+                     </div>
+                     <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                   </div>
+              </div>
+    
+              <div class="trending-option">
+                 <div class="trending-container">
+                     <div class="stats-container">
+                         <p class="trending-in">Trending in Romania &#183; Trending</p>
+                         <p class="trending-title"> Japan</p>
+                         <p class="trending-count"> 461K Tweets</p>
+                     </div>
+                     <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+              </div>
+    
+              <div class="trending-option">
+                 <div class="trending-container">
+                     <div class="stats-container">
+                         <p class="trending-in">Sports &#183; Trending</p>
+                         <p class="trending-title"> Ferrari</p>
+                         <p class="trending-count"> 24.4k Tweets</p>
+                     </div>
+                     <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+              </div>
+    
+              <div class="trending-option">
+                 <div class="trending-container">
+                     <div class="stats-container">
+                         <p class="trending-in">Entertainment &#183; Trending</p>
+                         <p class="trending-title"> Hollywood</p>
+                         <p class="trending-count"> 378K Tweets</p>
+                     </div>
+                     <div class="threedots-container">
+                        <div class="show-more">
+                            <p class="three-dots">&#183; &#183; &#183;</p>
+                            <div class="hover-threedots-container">
+                                More
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+              </div>
+    
+              <div class="showmore-container">
+                  <p class="showmore-text">Show more</p>
+              </div>
+            </div>
+    
+    
+            <div class="follow-bar">
+                <div>
+                    <p class="followbar-title">Who to follow</p>
+                </div>
+    
+                <div class="follow-option">
+                    <a class="link-to-profile" href="https://twitter.com/Huawei">
+                       <div class="follow-container">
+                          <div class="follow-container-spacebetween">
+                                  <div class="pp-container">
+                                      <img class="profile-photo" src="images/huawei-logo.svg" alt="Profile Photo 1">
+                                      <!--HOVER OVER PROFILE IMAGE-->
+                                      <div class="hover-photo">
+                                          <div class="stats-and-button">
+                                              <div class="imagesandstats-container">
+                                                  <img class="profile-photo-hover" src="images/huawei-logo.svg" alt="Profile Photo 1">
+                                                  <div class="name-container">
+                                                      <p class="name">Huawei</p>
+                                                      <img class="verified-icon" src="icons/verified-icon.svg" alt="Verified Icon">
+                                                  </div>
+                                                  <p class="username">@Huawei</p>
+                                              </div>
+                                              <div class="hover-profile-follow">
+                                                  <p class="profile-follow-button">Follow</p>
+                                              </div>
+                                          </div>
+                                          <div class="description">
+                                              <p>Welcome to the official Huawei Twitter</p> 
+                                              <p>account. Huawei is leading global</p> 
+                                              <p>provider of ICT infrastructure and smart</p>
+                                              <p>devices.</p> 
+                                          </div>
+                                          <div class="followers-container">
+                                              <p class="following-number"> <span class="followers-ing-number">996</span>  <span class="followers-ing-color">Following</span></p>
+                                              <p class="followers-number"> <span class="followers-ing-number">8.2M </span> <span class="followers-ing-color">Followers</span></p>
+                                          </div>
+                                          <div class="followedby-container">
+                                              <p class="followedby-text-noone">Not followed by anyone you're following</p>
+                                          </div>
+                                      </div>
+                                      <!-- END HOVER OVER PROFILE PICTURE-->
+                                  </div>
+                              <div class="stats-container-two">
+                                  <div class="name-username-container">
+                                      <div class="name-container">
+                                          <p class="name">Huawei</p>
+                                          <img class="verified-icon" src="icons/verified-icon.svg" alt="Verified Icon">
+                                      </div>
+                                      <p class="username">@Huawei</p>
+                                      <!--Hover over Name-->
+                                      <div class="hover-name">
+                                          <div class="stats-and-button">
+                                              <div class="imagesandstats-container">
+                                                  <img class="profile-photo-hover" src="images/huawei-logo.svg" alt="Profile Photo 1">
+                                                  <div class="name-container">
+                                                      <p class="name">Huawei</p>
+                                                      <img class="verified-icon" src="icons/verified-icon.svg" alt="Verified Icon">
+                                                  </div>
+                                                  <p class="username">@Huawei</p>
+                                              </div>
+                                              <div class="hover-profile-follow">
+                                                  <p class="profile-follow-button">Follow</p>
+                                              </div>
+                                          </div>
+                                          <div class="description">
+                                              <p>Welcome to the official Huawei Twitter</p> 
+                                              <p>account. Huawei is leading global</p> 
+                                              <p>provider of ICT infrastructure and smart</p>
+                                              <p>devices.</p> 
+                                          </div>
+                                          <div class="followers-container">
+                                              <p class="following-number"> <span class="followers-ing-number">996</span>  <span class="followers-ing-color">Following</span></p>
+                                              <p class="followers-number"> <span class="followers-ing-number">8.2M </span> <span class="followers-ing-color">Followers</span></p>
+                                          </div>
+                                          <div class="followedby-container">
+                                            <p class="followedby-text-noone">Not followed by anyone you're following</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                             <!--END HOVER OVER NAME-->
+                                  <div class="promoted-container">
+                                      <img class="promoted-icon" src="icons/promoted-icon.svg" alt="Promoted Icon">
+                                      <p class="promoted-text">Promoted</p>
+                                  </div>
+                              </div> 
+                          </div>
+                          <div class="profile-follow-container">
+                              <p class="profile-follow-button">Follow</p>
+                          </div>
+                      </div>
+                    </a>
+              </div>
+     
+     
+              <div class="follow-option">
+                 <a class="link-to-profile" href="https://twitter.com/Tesla">
+                    <div class="follow-container">
+                       <div class="follow-container-spacebetween">
+                               <div class="pp-container">
+                                   <img class="profile-photo" src="images/tesla-logo.svg" alt="Profile Photo 1">
+                                   <!--HOVER OVER PROFILE IMAGE-->
+                                   <div class="hover-photo-two">
+                                       <div class="stats-and-button">
+                                           <div class="imagesandstats-container">
+                                               <img class="profile-photo-hover" src="images/tesla-logo.svg" alt="Profile Photo 1">
+                                               <div class="name-container">
+                                                   <p class="name">Tesla</p>
+                                                   <img class="verified-icon" src="icons/verified-icon.svg" alt="Verified Icon">
+                                               </div>
+                                               <p class="username">@Tesla</p>
+                                           </div>
+                                           <div class="hover-profile-follow">
+                                               <p class="profile-follow-button">Follow</p>
+                                           </div>
+                                       </div>
+                                       <div class="description">
+                                           <p>electric cars, giant batteries and solar</p> 
+                                       </div>
+                                       <div class="followers-container">
+                                           <p class="following-number"> <span class="followers-ing-number">89</span>  <span class="followers-ing-color">Following</span></p>
+                                           <p class="followers-number"> <span class="followers-ing-number">13.8M </span> <span class="followers-ing-color">Followers</span></p>
+                                       </div>
+                                       <div class="followedby-container">
+                                        <p class="followedby-text-noone">Not followed by anyone you're following</p>
+                                      </div>
+                                   </div> 
+                                   <!-- END HOVER OVER PROFILE PICTURE-->
+                               </div>
+                           <div class="stats-container-two">
+                               <div class="name-username-container">
+                                   <div class="name-container">
+                                       <p class="name">Tesla</p>
+                                       <img class="verified-icon" src="icons/verified-icon.svg" alt="Verified Icon">
+                                   </div>
+                                   <p class="username">@Tesla</p>
+                                   <!--Hover over Name-->
+                                   <div class="hover-name-two">
+                                       <div class="stats-and-button">
+                                           <div class="imagesandstats-container">
+                                               <img class="profile-photo-hover" src="images/tesla-logo.svg" alt="Profile Photo 1">
+                                               <div class="name-container">
+                                                   <p class="name">Tesla</p>
+                                                   <img class="verified-icon" src="icons/verified-icon.svg" alt="Verified Icon">
+                                               </div>
+                                               <p class="username">@Tesla</p>
+                                           </div>
+                                           <div class="hover-profile-follow">
+                                               <p class="profile-follow-button">Follow</p>
+                                           </div>
+                                       </div>
+                                       <div class="description">
+                                           <p>electric cars, giant batteries and solar</p> 
+                                       </div>
+                                       <div class="followers-container">
+                                           <p class="following-number"> <span class="followers-ing-number">89</span>  <span class="followers-ing-color">Following</span></p>
+                                           <p class="followers-number"> <span class="followers-ing-number">13.8M </span> <span class="followers-ing-color">Followers</span></p>
+                                       </div>
+                                       <div class="followedby-container">
+                                        <p class="followedby-text-noone">Not followed by anyone you're following</p>
+                                       </div>
+                                   </div>
+                               </div>
+                                          <!--END HOVER OVER NAME-->
+                           </div> 
+                       </div>
+                       <div class="profile-follow-container-second">
+                           <p class="profile-follow-button">Follow</p>
+                       </div>
+                   </div>
+                 </a>
+             </div>
+    
+             <div class="follow-option">
+                 <a class="link-to-profile" href="https://twitter.com/BillGates">
+                      <div class="follow-container">
+                         <div class="follow-container-spacebetween">
+                                 <div class="pp-container">
+                                     <img class="profile-photo" src="images/billgates-logo.jpg" alt="Profile Photo 1">
+                                     <!--HOVER OVER PROFILE IMAGE-->
+                                     <div class="hover-photo-two">
+                                         <div class="stats-and-button">
+                                             <div class="imagesandstats-container">
+                                                 <img class="profile-photo-hover" src="images/billgates-logo.jpg" alt="Profile Photo 1">
+                                                 <div class="name-container">
+                                                     <p class="name">Bill Gates</p>
+                                                     <img class="verified-icon" src="icons/verified-icon.svg" alt="Verified Icon">
+                                                 </div>
+                                                 <p class="username">@BillGates</p>
+                                             </div>
+                                             <div class="hover-profile-follow">
+                                                 <p class="profile-follow-button">Follow</p>
+                                             </div>
+                                         </div>
+                                         <div class="description">
+                                            <p>Sharing things I'm learning through my</p> 
+                                            <p>foundation work and other interest</p> 
+                                         </div>
+                                         <div class="followers-container">
+                                             <p class="following-number"> <span class="followers-ing-number">361</span>  <span class="followers-ing-color">Following</span></p>
+                                             <p class="followers-number"> <span class="followers-ing-number">57.7M </span> <span class="followers-ing-color">Followers</span></p>
+                                         </div>
+                                         <div class="followedby-container">
+                                            <p class="followedby-text-noone">Not followed by anyone you're following</p>
+                                        </div>
+                                     </div>
+                                     <!-- END HOVER OVER PROFILE PICTURE-->
+                                 </div>
+                             <div class="stats-container-two">
+                                 <div class="name-username-container">
+                                     <div class="name-container">
+                                         <p class="name">Bill Gates</p>
+                                     </div>
+                                     <p class="username">@BillGates</p>
+                                     <!--Hover over Name-->
+                                     <div class="hover-name-two">
+                                         <div class="stats-and-button">
+                                             <div class="imagesandstats-container">
+                                                 <img class="profile-photo-hover" src="images/billgates-logo.jpg" alt="Profile Photo 1">
+                                                 <div class="name-container">
+                                                     <p class="name">Bill Gates</p>
+                                                     <img class="verified-icon" src="icons/verified-icon.svg" alt="Verified Icon">
+                                                 </div>
+                                                 <p class="username">@BillGates</p>
+                                             </div>
+                                             <div class="hover-profile-follow">
+                                                 <p class="profile-follow-button">Follow</p>
+                                             </div>
+                                         </div>
+                                         <div class="description">
+                                             <p>Sharing things I'm learning through my</p> 
+                                             <p>foundation work and other interest</p> 
+                                         </div>
+                                         <div class="followers-container">
+                                             <p class="following-number"> <span class="followers-ing-number">361</span>  <span class="followers-ing-color">Following</span></p>
+                                             <p class="followers-number"> <span class="followers-ing-number">57.7M </span> <span class="followers-ing-color">Followers</span></p>
+                                         </div>
+                                         <div class="followedby-container">
+                                             <p class="followedby-text-noone">Not followed by anyone you're following</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                            <!--END HOVER OVER NAME-->
+                             </div> 
+                         </div>
+                         <div class="profile-follow-container-second">
+                             <p class="profile-follow-button">Follow</p>
+                         </div>
+                     </div>
+                  </a>
+              </div>
+    
+              <div class="showmore-container">
+                <p class="showmore-text">Show more</p>
+              </div>
+            </div>  
+    
+    
+            <div class="otherstuff-bar">
+                <div class="otherstuff-container">
+                    <div class="line"> 
+                      <a class="otherstuff-link" href="https://twitter.com/en/tos">
+                          <span class="otherstuff-span">Terms of service</span>
+                      </a>
+                      <a class="otherstuff-link" href="https://twitter.com/en/privacy">
+                          <span class="otherstuff-span">Privacy Policy</span>
+                      </a> 
+                      <a class="otherstuff-link" href="https://help.twitter.com/en/rules-and-policies/twitter-cookies">
+                          <span class="otherstuff-span-two">Cookie Policy</span>
+                      </a>
+                    </div>
+                    <div class="line"> 
+                       <a class="otherstuff-link" href="https://help.twitter.com/en/resources/accessibility">
+                         <span class="otherstuff-span">Accsessibility</span> 
+                       </a> 
+                       <a class="otherstuff-link" href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo">
+                         <span class="otherstuff-span">Ads info </span>
+                       </a>
+                       <div class="more-otherstuff">
+                         <span class="otherstuff-span-two">More</span> 
+                         <span class="threedots-otherstuff"> &#183; &#183; &#183;</span>
+                         <div class="more-clicked">
+                             <a href="https://about.twitter.com/en">
+                                <div class="moreclicked-option">
+                                    <p>About</p>
+                                </div>
+                             </a>
+                             <a href="https://status.twitterstat.us/">
+                                <div class="moreclicked-option">
+                                    <p>Status</p>
+                                </div>
+                             </a>
+                             <a href="https://business.twitter.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness">
+                                <div class="moreclicked-option">
+                                    <p>Twitter for Business</p>
+                                </div>
+                             </a>
+                             <a href="https://developer.twitter.com/en">
+                                <div class="moreclicked-option">
+                                    <p>Developers</p>
+                                </div>
+                             </a>
+                         </div>
+                       </div>
+                       
+                    </div>
+                    <div class="last-line">
+                     <p>&#169; 2022 Twitter, Inc.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+   </div>
+
+   
+
+   <div class="messages-container">
+       <div class="messages-spacingdiv">
+           <div>
+               <p class="messages-text">Messages</p>
+           </div>
+           <div class="icons-inline">
+               <div class="messages-icon-container">
+                <img class="messages-icon-one" src="icons/new-message-icon.svg" alt="New message Icon">
+                <div class="messageicon-hover">
+                    <p class="newmessage-text">New message</p>
+                </div>
+               </div>
+               <div class="messages-icon-container-two">
+                <img class="messages-icon-two" src="icons/expand-icon.svg" alt="Expand Icon">
+                <div class="messageicon-hover-two">
+                    <p class="expand-text">Expand</p>
+                </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="first-message">
+           <div class="messaging-spacebetween">
+               <div class="messaging-pictureandstats">
+                   <div>
+                       <img class="messaging-account-picture" src="icons/account-picture.svg" alt="Profile Picture">
+                   </div>
+                   <div class="seconddiv-messaging">
+                       <div class="messaging-namenadusername">
+                           <p class="messaging-name">Cristian Untaru</p>
+                           <p class="messaging-username">@UntaruCristian</p>
+                       </div>
+                       <div>
+                           <p class="messaging-message">Follow me :D</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="date-container">
+                   <p class="messaging-date">Apr 10</p>
+               </div>
+           </div>
+       </div>
+       <div class="empty-message">
+
+       </div>
+   </div>
+
+
+   
+
+</body>
+
+
+</html>

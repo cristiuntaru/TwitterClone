@@ -1,0 +1,543 @@
+.suggestion{
+
+    /* position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    no margin left and no padding top */
+    width: 515px;
+    /*margin-top: 52px;*/
+    /*margin-left: 1005px;*/
+    padding-top: 12px;
+    height: 1450px;
+    background-color: black;
+    position: relative;
+}
+
+/* TRENDS FOR YOU bar */
+
+.trending-bar{
+    background-color: rgb(22, 23, 26);
+    width: 350px;
+    margin-left: 30px;
+    border-radius: 16px;
+}
+
+.trendingbar-title{
+    font-size: 21px;
+    color: rgb(227, 231, 232);
+    font-weight: bold;
+    padding: 16px 0px 20px 16px;
+}
+
+.trending-option{
+    background-color: rgb(22, 23, 26);
+    padding-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.trending-option:hover{
+    background-color: rgb(28, 30, 34);
+    cursor: pointer;
+}
+
+.trending-option .three-dots{
+    transition: background-color 0.25s;
+}
+
+.trending-option:hover .three-dots{
+   background-color: rgb(28, 30, 34);
+}
+
+.trending-option .three-dots:hover{
+    background-color: rgba(0, 255, 255, 0.089);
+}
+
+.trending-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-container{
+    padding: 6px 0px 6px 18px;
+}
+
+.trending-in{
+    color: rgb(98, 103, 108);
+    font-size: 13px;
+}
+
+.trending-title{
+    color: rgb(227, 231, 232);
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.trending-count{
+    color: rgb(98, 103, 108);
+    font-size: 13px;
+}
+
+.show-more{
+    position: relative;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.show-more:hover .hover-threedots-container{
+    opacity: 1;
+}
+
+.three-dots{
+    font-size: 12px;
+    margin-top: 3px;
+    color: white;
+    background-color: rgb(22, 23, 26);
+    padding: 9px 9px 9px 9px;
+    border-radius: 30px;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.three-dots:hover{
+    cursor: pointer;
+    color: aqua;
+    background-color: rgba(66, 255, 255, 0.041);
+}
+
+.hover-threedots-container{
+    color: white;
+    font-size: 11px;
+    padding: 3px 4px 3px 4px;
+    background-color: rgb(79, 97, 113);
+    position: absolute;
+    bottom: -21px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+}
+
+.showmore-container{
+    transition: background-color 0.3s;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.showmore-container:hover{
+   cursor: pointer;
+   background-color: rgb(28, 30, 34);
+}
+
+.showmore-text{
+   color: rgb(45, 139, 203);
+   padding: 18px 0px 18px 20px;
+   font-size: 15px;
+}
+
+/* WHO TO FOLLOW bar */
+
+.follow-bar{
+    background-color: rgb(22, 23, 26);
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 16px;
+    border-radius: 16px;
+}
+
+.followbar-title{
+    font-size: 21px;
+    color: rgb(227, 231, 232);
+    font-weight: 700;
+    padding: 16px 0px 10px 16px;
+}
+
+.link-to-profile{
+    text-decoration: none;
+}
+
+.follow-container{
+    background-color:rgb(22, 23, 26);
+    display: flex;
+    align-items: center;
+    padding: 9px 16px 10px 16px;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+}
+
+.follow-container:hover{
+    cursor: pointer;
+    background-color: rgb(28, 30, 34);
+}
+
+.follow-container-spacebetween{
+    display: flex;
+    /*background-color: brown; */
+}
+
+.pp-container{
+    /*background-color: blueviolet; */
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+    margin-top: 5px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.pp-container:hover .hover-photo,
+.pp-container:hover .hover-photo-two{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.profile-photo{
+    width: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: opacity 0.15s;
+}
+
+.profile-photo:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.stats-container-two{
+    display: flex;
+    flex-direction: column;
+    /*background-color: aqua;*/
+    margin-top: 10px;
+}
+
+.name-username-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.name-container{
+   display: flex;
+   align-items: center;
+}
+
+.name{
+   color: rgb(232, 235, 237);
+   font-weight: 700;
+   font-size: 15px;
+   padding-bottom: 1px;
+}
+
+.name:hover{
+   text-decoration: underline;
+}
+
+.name-username-container:hover .hover-name,
+.name-username-container:hover .hover-name-two{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.verified-icon{
+    width: 15px;
+    padding-left: 4px;
+    padding-bottom: 2px;
+}
+
+.username{
+    color: rgb(108, 113, 119);
+    font-size: 15px;
+}
+
+.promoted-container{
+   display: flex;
+   margin-top: 8px;
+}
+
+.promoted-icon{
+    width: 14px;
+}
+
+.promoted-text{
+    color: rgb(114, 119, 124);
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.profile-follow-container{
+    display: flex;
+    /*background-color: blue;*/
+    padding-bottom: 10px;
+}
+
+.profile-follow-container-second{
+    display: flex;
+}
+
+
+.profile-follow-button{
+    color: black;
+    background-color: white;
+    padding: 8px 18px 8px 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.profile-follow-button:hover{
+    background-color: rgb(226, 226, 226);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* HOVER OVER NAME CODE: */
+
+.hover-name{
+    position: absolute;
+    top: -310px;
+    right: -117px;
+    background-color: black;
+    width: 308px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+    cursor: default;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.hover-name-two{
+    position: absolute;
+    top: -258px;
+    right: -117px;
+    background-color: black;
+    width: 308px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+    cursor: default;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.hover-photo{
+    position: absolute;
+    top: -310px;
+    right: -130px;
+    background-color: black;
+    width: 308px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+    cursor: default;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.hover-photo-two{
+    position: absolute;
+    top: -258px;
+    right: -130px;
+    background-color: black;
+    width: 308px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+    cursor: default;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.stats-and-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-left: 18px;
+}
+
+.imagesandstats-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-photo-hover{
+    width: 62px;
+    border-radius: 40px;
+    margin-bottom: 5px;
+    transition: opacity 0.15s;
+}
+
+.profile-photo-hover:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.hover-profile-follow{
+    margin-right: 14px;
+    margin-bottom: 70px;
+}
+
+.description{
+    color: white;
+    padding: 14px 0px 10px 18px;
+    line-height: 21px;
+    font-size: 15px;
+}
+
+.followers-container{
+    color: white;
+    display: flex;
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+.following-number{
+    padding-right: 22px;
+}
+
+.following-number:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.followers-number:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.followers-ing-number{
+    font-weight: 700;
+}
+
+.followers-ing-color{
+    color: rgb(108, 113, 119);
+    font-size: 15px;
+}
+
+.followedby-container{
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    padding-bottom: 20px;
+    padding-top: 4px;
+}
+
+.followedby-text-noone{
+    color: rgb(108, 113, 119);
+    font-size: 13px;
+}
+
+.followedby-text-noone:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* END OF HOVER OVER NAME CODE */
+
+
+/* OTHER STUFF BAR*/
+
+.otherstuff-bar{
+   /* background-color: rgb(22, 23, 26); */
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 10px; 
+    padding-bottom: 35px;
+}
+
+.otherstuff-container{
+    padding-left: 18px;
+    padding-top: 6px;
+}
+
+.otherstuff-link{
+    color: rgb(101, 105, 110);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.otherstuff-span{
+    padding-right: 8px;
+}
+
+.otherstuff-span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.more-otherstuff{
+    display: inline-block;
+    position: relative;
+}
+
+.more-otherstuff:hover{
+    cursor: pointer;
+}
+
+.more-otherstuff:hover .more-clicked{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.otherstuff-span-two{
+    color: rgb(101, 105, 110);
+    font-size: 13px;
+
+}
+
+.otherstuff-span-two:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.line{
+  margin: 0;
+}
+
+.threedots-otherstuff{
+    color: rgb(101, 105, 110);
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 2px;
+}
+
+/* Otherstuff Bar HOVER */
+
+.more-clicked{
+   position: absolute;
+   background-color: black;
+   width: 165px;
+   border-radius: 6px;
+   border: none;
+   box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+   bottom: -1px;
+   right: -2px;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 1s;
+}
+
+.moreclicked-option{
+    transition: background-color 0.2s;
+}
+
+.moreclicked-option:hover{
+    cursor: pointer;
+    background-color: rgb(28, 30, 34);
+}
+.moreclicked-option p{
+    padding: 17px 0 17px 16px;
+    color: rgb(231, 233, 234);
+    font-size: 15px;
+}
+
+.last-line{
+  padding-top: 5px;
+  color: rgb(101, 105, 110);
+  font-size: 13px;
+}

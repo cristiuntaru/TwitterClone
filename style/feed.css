@@ -1,0 +1,231 @@
+.feed-container{
+    background-color: black;
+    width: 605px;
+    border-right: 1px solid rgba(98, 103, 108, 0.5);
+    border-left: 1px solid rgba(98, 103, 108, 0.5);
+    color: white;
+}
+
+.margin-container-input{
+    border-bottom: 1px solid rgba(98, 103, 108, 0.7);
+    padding-bottom: 2px;
+}
+
+.pictureand-input-container{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px 10px 16px;
+    /*background-color: aqua;*/
+}
+
+.feed-accpicture{
+    width: 48px;
+    border-radius: 50%;
+    transition: opacity 0.15s;
+}
+
+.feed-accpicture:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.feed-input{
+    background-color: black;
+    border: none;
+    margin-left: 12px;
+    width: 200px;
+    height: 25px;
+    margin-top: 14px;
+}
+
+.feed-input::placeholder{
+    font-size: 20px;
+}
+
+.icons-and-tweet-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+.icons-feed-container{
+    display: flex;
+    margin-left: 52px;
+}
+
+.icon-spacing{
+    background-color: black;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+    position:relative ;
+}
+
+.icon-spacing:hover{
+    background-color: rgb(11, 20, 26);
+    cursor: pointer;
+}
+
+.icon-location-spacing{
+    background-color: black;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.feed-icon{
+    width: 18px;
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+.feed-location-icon{
+    width: 15px;
+    opacity: 0.45;
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+.feed-tweet-btn{
+    background-color: rgb(8, 77, 121);
+    color: rgb(127, 127, 127);
+    border: none;
+    padding: 9px 16px 9px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*   Hover over icons code */
+
+.icon-spacing:hover .icon-hover,
+.icon-spacing:hover .icon-hovertwo{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.icon-spacing:hover .icon-hoverthree,
+.icon-spacing:hover .icon-hoverfour{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.icon-spacing:hover .icon-hoverfive{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.icon-hover{
+    position: absolute;
+    bottom: -23px;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(73, 90, 106);
+    font-size: 11px;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.icon-hovertwo{
+    position: absolute;
+    bottom: -23px;
+    left: 6px;
+    font-size: 11px;
+    background-color: rgb(73, 90, 106);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.icon-hoverthree{
+    position: absolute;
+    bottom: -23px;
+    left: 4px;
+    font-size: 11px;
+    background-color: rgb(73, 90, 106);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.icon-hoverfour{
+    position: absolute;
+    bottom: -23px;
+    left: 1px;
+    font-size: 11px;
+    background-color: rgb(73, 90, 106);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.icon-hoverfive{
+    position: absolute;
+    bottom: -23px;
+    left: -8px;
+    font-size: 11px;
+    background-color: rgb(73, 90, 106);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.icon-hover-text{
+    padding: 4px 0px 4px 3px;
+}
+
+.icon-hover-texttwo{
+    padding: 4px 4px 4px 4px;
+}
+
+/* End of hover over icons code */
+
+.timeline-container{
+   /* background-color: aqua; */
+    margin: 50px 100px 50px 134px;
+}
+
+.timeline-photo{
+    width: 343px;
+}
+
+.timeline-title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.timeline-header{
+    font-size: 33px;
+    font-weight: bold;
+    color: rgb(231, 232, 234);
+}
+
+.timeline-description{
+    font-size: 15px;
+    color: rgb(100, 105, 109);
+    padding-bottom: 1px;
+}
+
+.timeline-button-container{
+   /* background-color: aqua; */
+   margin-top: 30px;
+}
+
+.timeline-button{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(63, 150, 209);
+    border: none;
+    padding: 16px 32px 16px 32px;
+    border-radius: 28px;
+    transition: background-color 0.3s;
+}
+
+.timeline-button:hover{
+    cursor: pointer;
+    background-color: rgb(43, 138, 202);
+}
